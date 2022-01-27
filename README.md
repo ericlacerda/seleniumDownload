@@ -25,6 +25,15 @@ Cookie = driver.ExecuteScript("var x = document.cookie; return x;")
  exec = exec + """" + href + """ " + """C:\Eric\" + Cells(Selection.Row, 5) + ".pdf"" "
  exec = exec + Cookie
  
- 'Note que a saida exec tem que está assim C:\Eric\App.exe "http:\\www.w2.com\arquivo.pdf" "c:\eric\teste.pdf" cookieSession 
+ 'Note que a saida exec tem que estar assim C:\Eric\App.exe "http:\\www.w2.com\arquivo.pdf" "c:\eric\teste.pdf" cookieSession 
  'Então é só utilizar o Shell
  texto = Shell(exec, vbNormalNoFocus)
+ 
+ Exemplo:
+ 
+ ![image](https://user-images.githubusercontent.com/16361144/151417295-f610ea70-f178-4d82-a306-f6f9e2bad9ff.png)
+
+
+
+![image](https://user-images.githubusercontent.com/16361144/151417467-d53f5668-7e34-41e2-b6a7-1bde43ad2254.png)
+
